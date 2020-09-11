@@ -1,0 +1,53 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.6.0"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.6.0">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>#!/usr/bin/env groovy
+
+@Library(&apos;jenkins-shared-lib&apos;)_
+
+pipeline {
+    agent any
+
+    environment {
+        PROJECT_NAME = get_project_name()
+        PR_BRANCH = &quot;&quot;
+    }
+    
+    stages{
+        stage(&quot;git checkout&quot;){
+            steps{
+                git credentialsId: &apos;Jenkins-shared-lib&apos;, url: &apos;git@github.com:guleriagishere/sharedlib.git&apos;
+            }
+           
+        }
+        stage(&quot;One&quot;){
+            steps{
+                echo &quot;========executing A========&quot;
+            }
+        }
+    }
+    post {
+        always{
+            slacknotification(currentBuild.currentResult,&apos;itmavenworkspace&apos;,&apos;jenkins&apos;,&apos;#jenkins&apos;,&apos;slack-tokenId-credential&apos;,getTestResultsForSlack())
+            // slackSend channel: &apos;#jenkins&apos;, message: &apos;hello world&apos;, teamDomain: &apos;itmavenworkspace&apos;, tokenCredentialId: &apos;slack-tokenId-credential&apos;, username: &apos;jenkins&apos;
+        }
+    }
+}
+</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

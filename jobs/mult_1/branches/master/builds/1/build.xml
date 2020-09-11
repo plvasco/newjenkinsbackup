@@ -1,0 +1,158 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.39">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <jenkins.branch.BranchIndexingCause plugin="branch-api@2.5.6"/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <jenkins.scm.api.SCMRevisionAction plugin="scm-api@2.6.3">
+      <sourceId>b08fa18d-df8c-40d5-bfde-3640213dd9ca</sourceId>
+      <revision class="jenkins.plugins.git.GitBranchSCMRevision" plugin="git@4.2.2">
+        <head class="jenkins.plugins.git.GitBranchSCMHead">
+          <name>master</name>
+        </head>
+        <hash>d3fe70cd80dccaab54f57a284393dbac707cb4bb</hash>
+      </revision>
+    </jenkins.scm.api.SCMRevisionAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>71</queueId>
+  <timestamp>1592918460975</timestamp>
+  <startTime>1592918460990</startTime>
+  <result>FAILURE</result>
+  <duration>3319</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node { 
+	def prefix= &apos;&apos;
+	if (isUnix()) 
+		prefix = &apos;~/setup/git/&apos;;
+	else 
+		prefix = &apos;c:\\setup\\git\\&apos;;
+	def mvnHome = tool &apos;Maven 3.3.9&apos;
+	def tomcatWeb = &apos;&apos;
+	def mvnBin = mvnHome
+	if (isUnix()) {
+		tomcatWeb = &apos;/Library/Tomcat/webapps&apos;
+		mvnBin+=&apos;/bin&apos;
+		}
+	else { 
+		tomcatWeb = &apos;C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps&apos;	
+		mvnBin+=&apos;\\bin&apos;
+		}
+	stage(&apos;jpa&apos;) { 
+
+	 ws(&apos;wsjpa&apos;) {
+			git url: &quot;${prefix}/course-jpa&quot;
+			withEnv([&quot;JAVA_HOME=${ tool &apos;JDK 8&apos; }&quot;,&quot;PATH+MAVEN=${mvnBin}&quot;]) {
+			if (isUnix()) 
+				sh &quot;mvn clean install&quot;
+			else {
+				bat &quot;mvn clean install&quot;
+				}
+				}
+			 stash name: &quot;jpa-jar&quot;, includes: &quot;target/course-jpa*.jar&quot;	
+		}
+		}
+	stage(&apos;jsf&apos;) { 
+	 ws(&apos;wsjsf&apos;) {
+			git url: &quot;${prefix}/course-jsf&quot;
+			withEnv([&quot;JAVA_HOME=${ tool &apos;JDK 8&apos; }&quot;,&quot;PATH+MAVEN=${mvnBin}&quot;]) {
+			if (isUnix()) {
+				sh &quot;mvn clean install&quot;
+				sh &quot;cp target/course-jsf*.war ${tomcatWeb}/course-jsf.war&quot;
+				}
+			else {
+				bat &quot;mvn clean install&quot;
+				bat &quot;copy target\\course-jsf*.war \&quot;${tomcatWeb}\\course-jsf.war\&quot;&quot;
+				}
+				}
+			
+		}
+		}
+	stage(&apos;web&apos;) {
+	 ws(&apos;wsweb&apos;) {
+			git url: &quot;${prefix}/course-web&quot;
+			withEnv([&quot;JAVA_HOME=${ tool &apos;JDK 8&apos; }&quot;,&quot;PATH+MAVEN=${mvnBin}&quot;]) {
+			if (isUnix()) {
+				sh &quot;mvn clean install&quot;
+				sh &quot;cp target/course-web*.war ${tomcatWeb}/course-web.war&quot;
+				}
+			else {
+				bat &quot;mvn clean install&quot;
+				bat &quot;copy target\\course-web*.war \&quot;${tomcatWeb}\\course-web.war\&quot;&quot;
+				}
+				}
+			
+		}
+	}
+	stage (&apos;it-jsf&apos;) {
+	 ws(&apos;wsit-jsf&apos;) {
+			git url: &quot;${prefix}/course-jsf&quot;
+			withEnv([&quot;JAVA_HOME=${ tool &apos;JDK 8&apos; }&quot;,&quot;PATH+MAVEN=${mvnBin}&quot;]) {
+			if (isUnix()) 
+				sh &quot;mvn compiler:testCompile failsafe:integration-test&quot;
+			else 
+				bat &quot;mvn compiler:testCompile failsafe:integration-test&quot;
+				}
+			
+		}
+		
+	}
+	stage (&apos;it-web&apos;) {
+	 ws(&apos;wsit-web&apos;) {
+			git url: &quot;${prefix}/course-web&quot;
+			withEnv([&quot;JAVA_HOME=${ tool &apos;JDK 8&apos; }&quot;,&quot;PATH+MAVEN=${mvnBin}&quot;]) {
+			if (isUnix()) 
+				sh &quot;mvn compiler:testCompile failsafe:integration-test&quot;
+			else 
+				bat &quot;mvn compiler:testCompile failsafe:integration-test&quot;
+				}
+			
+		}
+		
+	}
+
+ }
+</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>103375461</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>760777185</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>939191077</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>1030279759</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>462398800</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>9</iota>
+    <head>1:9</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

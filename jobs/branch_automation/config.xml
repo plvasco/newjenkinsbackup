@@ -1,0 +1,63 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BranchName</name>
+          <description></description>
+          <defaultValue>master</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>NewBranchName</name>
+          <description></description>
+          <defaultValue>nitin-1</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SampleFileName</name>
+          <description></description>
+          <defaultValue>nitin-est1</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(){
+    stage(&apos;Cleaning Workspace&apos;) {
+          cleanWs()
+    }
+    
+    stage(&apos;git-clone&apos;){
+    git branch: &apos;${BranchName}&apos;, credentialsId: &apos;testing&apos;, url: &apos;https://bitbucket.org/pietto/test006.git&apos;
+    }
+
+    stage(&apos;automation&apos;){
+        withCredentials([usernamePassword(credentialsId: &apos;testing&apos;, passwordVariable: &apos;PASS&apos;, usernameVariable: &apos;USER&apos;)]) {
+            sh &quot;echo ${USER}&quot; 
+            sh &quot;echo ${PASS}&quot;
+            sh &quot;cat .git/config&quot;
+            sh &quot;git checkout -b ${NewBranchName}&quot;
+            sh &quot;git branch&quot;
+            sh &quot;touch ${SampleFileName}&quot;
+            sh &quot;git status&quot;
+            sh &quot;git add .&quot;
+            sh &apos;git commit -m &quot;adding new file&quot;&apos; 
+            sh &quot;git push https://&apos;${USER}:${PASS}&apos;@bitbucket.org/pietto/test006.git ${NewBranchName}&quot;
+            }  
+    }
+    
+    stage(&apos;Cleaning Workspace&apos;) {
+          cleanWs()
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

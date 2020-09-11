@@ -1,0 +1,15 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<org.jenkins.ci.plugins.jobimport.JobImportGlobalConfig plugin="job-import-plugin@3.4">
+  <sites>
+    <org.jenkins.ci.plugins.jobimport.model.JenkinsSite>
+      <name>Old Jenkins</name>
+      <url>http://18.224.43.64:8080/</url>
+      <defaultCredentialsId>Jenkins 1 login</defaultCredentialsId>
+    </org.jenkins.ci.plugins.jobimport.model.JenkinsSite>
+    <org.jenkins.ci.plugins.jobimport.model.JenkinsSite>
+      <name></name>
+      <url></url>
+      <defaultCredentialsId></defaultCredentialsId>
+    </org.jenkins.ci.plugins.jobimport.model.JenkinsSite>
+  </sites>
+</org.jenkins.ci.plugins.jobimport.JobImportGlobalConfig>

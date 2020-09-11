@@ -1,0 +1,29 @@
+Started
+[Mon Jun 22 13:16:41 UTC 2020] Starting branch indexing...
+ > git --version # timeout=10
+ERROR: [Mon Jun 22 13:16:41 UTC 2020] Could not update folder level actions from source ea611640-d0a1-4c07-bcd9-19889431b777
+hudson.plugins.git.GitException: Invalid remote URL: git clone git@bitbucket.org:pietto/test001.git
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.addCheckedRemoteUrl(CliGitAPIImpl.java:437)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.getRemoteSymbolicReferences(CliGitAPIImpl.java:3352)
+	at jenkins.plugins.git.AbstractGitSCMSource.retrieveActions(AbstractGitSCMSource.java:1121)
+	at jenkins.scm.api.SCMSource.fetchActions(SCMSource.java:848)
+	at jenkins.branch.MultiBranchProject.computeChildren(MultiBranchProject.java:600)
+	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:278)
+	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:165)
+	at jenkins.branch.MultiBranchProject$BranchIndexing.run(MultiBranchProject.java:1034)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+[Mon Jun 22 13:16:41 UTC 2020] Finished branch indexing. Indexing took 0.15 sec
+FATAL: Failed to recompute children of TestFolder » test » multi
+hudson.plugins.git.GitException: Invalid remote URL: git clone git@bitbucket.org:pietto/test001.git
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.addCheckedRemoteUrl(CliGitAPIImpl.java:437)
+	at org.jenkinsci.plugins.gitclient.CliGitAPIImpl.getRemoteSymbolicReferences(CliGitAPIImpl.java:3352)
+	at jenkins.plugins.git.AbstractGitSCMSource.retrieveActions(AbstractGitSCMSource.java:1121)
+	at jenkins.scm.api.SCMSource.fetchActions(SCMSource.java:848)
+	at jenkins.branch.MultiBranchProject.computeChildren(MultiBranchProject.java:600)
+	at com.cloudbees.hudson.plugins.folder.computed.ComputedFolder.updateChildren(ComputedFolder.java:278)
+	at com.cloudbees.hudson.plugins.folder.computed.FolderComputation.run(FolderComputation.java:165)
+	at jenkins.branch.MultiBranchProject$BranchIndexing.run(MultiBranchProject.java:1034)
+	at hudson.model.ResourceController.execute(ResourceController.java:97)
+	at hudson.model.Executor.run(Executor.java:428)
+Finished: FAILURE

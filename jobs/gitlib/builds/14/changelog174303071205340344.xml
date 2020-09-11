@@ -1,0 +1,10 @@
+commit 213fb9417bf743da95f4cdd72a4838bceebad744
+tree b48adf681f621ab36dda8a00fc0cfa029510a99e
+parent 3434110fda77fef242d2d28aa85389b4ef978027
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 22:33:10 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 22:33:10 +0530
+
+    bot user false.
+
+
+:100644 100644 298b7aa5e45b220a4961c59049174f8566b5b10a 9d45d0934a4842ff7c21fdd66e03bd70aa4113ec M	vars/slacknotification.groovy

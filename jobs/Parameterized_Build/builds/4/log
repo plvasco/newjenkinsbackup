@@ -1,0 +1,22 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Parameterized_Build
+using credential 098f54aa-330f-4a1a-b977-61bd12405418
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://pietto@bitbucket.org/pietto/test006.git # timeout=10
+Fetching upstream changes from https://pietto@bitbucket.org/pietto/test006.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://pietto@bitbucket.org/pietto/test006.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision a3d478bfc61fc026c33ba25a7563d5915218f68a (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f a3d478bfc61fc026c33ba25a7563d5915218f68a # timeout=10
+Commit message: "adding"
+ > /usr/bin/git rev-list --no-walk f8b6e4d29d0f4e538b16254bba3855a233dd4252 # timeout=10
+[Parameterized_Build] $ /bin/sh -xe /tmp/jenkins14338002656225742427.sh
++ git branch
+* (HEAD detached at a3d478b)
+Finished: SUCCESS

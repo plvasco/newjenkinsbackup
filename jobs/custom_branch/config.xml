@@ -1,0 +1,58 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BranchName</name>
+          <description></description>
+          <defaultValue>master</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>NewBranchName</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>SampleFileName</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(&apos;master&apos;){
+stage(&apos;git-clone&apos;)
+	{
+	   
+               git branch: &apos;${BranchName}&apos;, credentialsId: &apos;pietto-git&apos;, url: &apos;https://pietto@bitbucket.org/pietto/test006.git&apos;
+            
+     }
+stage(&apos;checkout&apos;)
+        {
+            sh &apos;ls -la&apos;
+            sh &apos;pwd&apos;
+            sh &apos;git checkout -b ${NewBranchName}&apos;
+            sh &apos;git checkout ${NewBranchName} &apos;
+            sh &apos;git branch&apos;
+            sh &apos;touch ${SampleFileName}&apos;
+            sh &apos;git status&apos;
+            sh &apos;git add .&apos;
+            sh &apos;git commit -m &quot;adding new file&quot; &apos; 
+            sh &apos;git push origin https://pietto@gmx.com:Smooch!991@bitbucket.org/pietto/test006.git&apos;
+            sh &apos;ls -la&apos;
+    
+        }
+}    </script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

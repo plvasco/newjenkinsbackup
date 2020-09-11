@@ -1,0 +1,290 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.39">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@1.6.0">
+      <stagesUUID>67487004-73bc-4b51-891b-a83f1d1ca452</stagesUUID>
+      <pipelineDefs>
+        <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@1.6.0">
+          <stages>
+            <stages>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Cleaning Workspace</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>cleanWs</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map"/>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>Getting the repos list and clone them.</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>returnStdout</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${&apos;&apos;&apos;#!/bin/bash
+                    ORG_USER=pietto
+                    ORG_PASS=Smooch!991
+                    ORG_NAME=pietto
+
+                    for CUSTOM_WORD in ${REPOS_TO_FORK}
+                    do
+
+                    for i in {1..20};do if [[ $(curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq . | wc -l) -gt 10 ]];then curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq &apos;.values | .[].slug&apos; | tr -d &apos;&quot;&apos; | grep $CUSTOM_WORD &gt; repoinfo.json ;fi;done;
+
+                    done
+
+                    for REPO_NAME in `cat repoinfo.json`; do
+                        echo $REPO_NAME
+                        git clone https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git
+                    done
+                &apos;&apos;&apos;.stripIndent()}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+                <name>automation</name>
+                <branches>
+                  <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                    <name>default</name>
+                    <steps>
+                      <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                        <name>sh</name>
+                        <args class="org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTNamedArgumentList">
+                          <arguments class="linked-hash-map">
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>returnStdout</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                                <value class="boolean">true</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-ConstantValue>
+                            </entry>
+                            <entry>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                                <key>script</key>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTKey>
+                              <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                                <value class="string">${&apos;&apos;&apos;#!/bin/bash
+                ORG_USER=pietto
+                ORG_PASS=Smooch!991
+                ORG_NAME=pietto
+
+                pwd
+                ls -la
+
+                for CUSTOM_WORD in ${REPOS_TO_FORK}
+                do
+
+                for i in {1..20};do if [[ $(curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq . | wc -l) -gt 10 ]];then curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq &apos;.values | .[].slug&apos; | tr -d &apos;&quot;&apos; | grep $CUSTOM_WORD &gt; repoinfo.json ;fi;done;
+
+                done
+                    for REPO_NAME in `cat repoinfo.json`; do
+                        echo $REPO_NAME
+                            cd /var/lib/jenkins/workspace/allbranchautomation_rev1/$REPO_NAME
+                            git checkout  ${BranchName}
+                            git checkout -b ${NewBranchName}
+                            touch ${FILENAME}
+                            git add .
+                            git commit -m &quot;adding new file&quot;
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git ${NewBranchName}
+                            
+                            git checkout master
+                            git pull origin master
+                            git merge ${NewBranchName}
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git master
+                            git tag  ${TAG}
+                            git tag -n
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git  ${TAG}
+                            
+                            
+                            git checkout develop
+                            git pull origin develop
+                            git merge master
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git develop         
+                    
+                    
+                    done
+                &apos;&apos;&apos;.stripIndent()}</value>
+                              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTValue_-GStringValue>
+                            </entry>
+                          </arguments>
+                        </args>
+                      </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStep>
+                    </steps>
+                  </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTBranch>
+                </branches>
+              </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
+            </stages>
+            <uuid>67487004-73bc-4b51-891b-a83f1d1ca452</uuid>
+          </stages>
+          <agent>
+            <agentType>
+              <key>any</key>
+            </agentType>
+          </agent>
+        </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
+      </pipelineDefs>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
+  </actions>
+  <queueId>469</queueId>
+  <timestamp>1593632903290</timestamp>
+  <startTime>1593632903293</startTime>
+  <result>SUCCESS</result>
+  <duration>1088</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>SUCCESS</result>
+    <script>pipeline{
+    agent any
+    stages{
+        stage(&apos;Cleaning Workspace&apos;) {
+            steps {
+                cleanWs()
+            }
+        }
+        stage(&apos;Getting the repos list and clone them.&apos;) {
+            steps {
+                sh(returnStdout: true, script: &apos;&apos;&apos;#!/bin/bash
+                    ORG_USER=pietto
+                    ORG_PASS=Smooch!991
+                    ORG_NAME=pietto
+
+                    for CUSTOM_WORD in ${REPOS_TO_FORK}
+                    do
+
+                    for i in {1..20};do if [[ $(curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq . | wc -l) -gt 10 ]];then curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq &apos;.values | .[].slug&apos; | tr -d &apos;&quot;&apos; | grep $CUSTOM_WORD &gt; repoinfo.json ;fi;done;
+
+                    done
+
+                    for REPO_NAME in `cat repoinfo.json`; do
+                        echo $REPO_NAME
+                        git clone https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git
+                    done
+                &apos;&apos;&apos;.stripIndent())
+            }
+        }
+        stage(&apos;automation&apos;) {
+            steps {
+                sh(returnStdout: true, script: &apos;&apos;&apos;#!/bin/bash
+                ORG_USER=pietto
+                ORG_PASS=Smooch!991
+                ORG_NAME=pietto
+
+                pwd
+                ls -la
+
+                for CUSTOM_WORD in ${REPOS_TO_FORK}
+                do
+
+                for i in {1..20};do if [[ $(curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq . | wc -l) -gt 10 ]];then curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq &apos;.values | .[].slug&apos; | tr -d &apos;&quot;&apos; | grep $CUSTOM_WORD &gt; repoinfo.json ;fi;done;
+
+                done
+                    for REPO_NAME in `cat repoinfo.json`; do
+                        echo $REPO_NAME
+                            cd /var/lib/jenkins/workspace/allbranchautomation_rev1/$REPO_NAME
+                            git checkout  ${BranchName}
+                            git checkout -b ${NewBranchName}
+                            touch ${FILENAME}
+                            git add .
+                            git commit -m &quot;adding new file&quot;
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git ${NewBranchName}
+                            
+                            git checkout master
+                            git pull origin master
+                            git merge ${NewBranchName}
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git master
+                            git tag  ${TAG}
+                            git tag -n
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git  ${TAG}
+                            
+                            
+                            git checkout develop
+                            git pull origin develop
+                            git merge master
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git develop         
+                    
+                    
+                    done
+                &apos;&apos;&apos;.stripIndent())
+            }
+        }
+    }
+}</script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>106510739</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>300669295</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>548218744</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>24109706</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>56199023</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>22</iota>
+    <head>1:22</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

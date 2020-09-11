@@ -1,0 +1,100 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.StringParameterDefinition>
+          <name>BranchName</name>
+          <description></description>
+          <defaultValue>master</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>NewBranchName</name>
+          <description></description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>FILENAME</name>
+          <description></description>
+          <defaultValue>asdfghgfdssdfghjhgfd</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>node(){
+    stage(&apos;Cleaning Workspace&apos;) {
+          cleanWs()
+    }
+    
+	stage(&apos;Setting the variables values&apos;) {
+            
+                sh &apos; ls -la&apos;
+    	        sh &apos;&apos;&apos; #!/bin/bash
+                ORG_USER=pietto
+                ORG_PASS=Smooch!991
+                ORG_NAME=pietto
+				curl -s -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/pietto?pagelen=100 | jq -r &apos;.values[] | .name&apos;  &gt;  repoinfo.json
+
+
+				for REPO_NAME in `cat repoinfo.json`; do
+        			echo $REPO_NAME
+        			git clone https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git
+
+        		done
+        		&apos;&apos;&apos;
+        		sh &apos;ls -la&apos;
+        		sh &apos;pwd&apos;
+	}
+	stage(&apos;automation&apos;)
+	 {
+	     	echo &apos;asasa&apos;
+	        sh &apos;pwd&apos;
+	 		sh &apos;&apos;&apos; 
+	 		#!/bin/bash
+	 		 ORG_USER=pietto
+             ORG_PASS=Smooch!991
+             ORG_NAME=pietto
+    	   	curl -s -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/pietto?pagelen=100 | jq -r &apos;.values[] | .name&apos;  &gt;  repoinfo.json
+			for REPO_NAME in `cat repoinfo.json`; do
+        	      echo $REPO_NAME
+		            cd /var/lib/jenkins/workspace/allbranchautomation/$REPO_NAME 
+		            git checkout -b ${NewBranchName}
+		            touch ${FILENAME}
+		            git add .
+		            git commit -m &quot;adding new file&quot;
+		            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git ${NewBranchName}
+		            
+		            git checkout master
+                    git pull origin master
+                    git merge ${NewBranchName}
+                    git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git master
+                    git tag  ${BUILD_NUMBER}
+                    git tag -n
+                    git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git  ${BUILD_NUMBER}
+                    
+                    
+                    git checkout develop
+                    git pull origin develop
+                    git merge master
+                    git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git develop         
+		     
+		     
+		       done
+		        &apos;&apos;&apos; 
+	}
+		
+	
+	}
+        </script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

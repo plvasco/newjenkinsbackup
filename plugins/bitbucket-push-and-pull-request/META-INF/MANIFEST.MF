@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: cdelmonte
+Build-Jdk: 1.8.0_242
+Extension-Name: bitbucket-push-and-pull-request
+Specification-Title: Bitbucket plugin for Jenkins v2.138.2 or later, a
+ llowing push and pull requests
+Implementation-Title: bitbucket-push-and-pull-request
+Implementation-Version: 2.3.3
+Group-Id: io.jenkins.plugins
+Short-Name: bitbucket-push-and-pull-request
+Long-Name: Bitbucket Push and Pull Request Plugin
+Url: https://github.com/jenkinsci/bitbucket-push-and-pull-request-plugin
+Plugin-Version: 2.3.3
+Hudson-Version: 2.138.2
+Jenkins-Version: 2.138.2
+Plugin-Dependencies: workflow-api:2.30,workflow-multibranch:2.11,git:3
+ .6.0,job-dsl:1.71,mercurial:2.4,scm-api:2.2.2,structs:1.17
+Plugin-Developers: Christian Del Monte:cdelmonte:,Patrick Mac Gregor:m
+ acghriogair:
+

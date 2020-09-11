@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: stephenshank
+Build-Jdk: 1.8.0_181-google-v7
+Extension-Name: google-storage-plugin
+Specification-Title: This plugin provides the “Google Cloud Storage 
+ Uploader” post-build step for publishing build artifacts to Google 
+ Cloud Storage.
+Implementation-Title: google-storage-plugin
+Implementation-Version: 1.5.1
+Group-Id: org.jenkins-ci.plugins
+Short-Name: google-storage-plugin
+Long-Name: Google Cloud Storage plugin
+Url: http://wiki.jenkins-ci.org/display/JENKINS/Google+Cloud+Storage+P
+ lugin
+Compatible-Since-Version: 1.5.0
+Minimum-Java-Version: 1.8
+Plugin-Version: 1.5.1
+Hudson-Version: 2.164.2
+Jenkins-Version: 2.164.2
+Plugin-Dependencies: workflow-step-api:2.19,credentials:2.2.0,google-m
+ etadata-plugin:0.2,google-oauth-plugin:1.0.0,ssh-credentials:1.16,str
+ ucts:1.17
+Plugin-Developers: Craig Barber:craigdbarber:craigbarber@google.com,St
+ ephen Shank:stephenashank:stephenshank@google.com
+

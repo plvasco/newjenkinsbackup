@@ -1,0 +1,12 @@
+commit b57d64deadb665bffa7de4d4e9c4406d1ff37b10
+tree ad813ca8c54fd0832cd33e07c4f168f7a84f77c1
+parent 213fb9417bf743da95f4cdd72a4838bceebad744
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 22:48:13 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 22:48:13 +0530
+
+    shared lib working for slack notif, git info, test results, author info functions.
+
+
+:100644 100644 09b7f3ba4c521c8a70ed2d287a762ce050f43789 ee360505d5ba2a755aa20e52fbbfb68f92794233 M	Jenkinsfile
+:100644 100644 8fd3047b31a3127e61c5f536c1d7d63bc139f772 6ff0a002a14e905a6dc9d6e5848d9a715554be89 M	jenkinsfile-test.groovy
+:000000 100644 0000000000000000000000000000000000000000 70e926e255fdbdc536373e9e6618e293574630e9 A	vars/get_project_name.groovy

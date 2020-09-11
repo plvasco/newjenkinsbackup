@@ -1,0 +1,10 @@
+git remote set-url origin https://pietto@bitbucket.org/pietto/bitbucket.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/jenkins.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/jenkinsinter.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test1.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test2.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test3.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test4.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test5.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test6.git
+git remote set-url origin https://pietto@bitbucket.org/pietto/test7.git

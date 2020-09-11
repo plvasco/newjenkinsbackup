@@ -1,0 +1,11 @@
+commit 56288cb9af2d1f357ca145c9dfc008e2cb8a5d78
+tree cb95995b8711b14f4333ef5ceb593a1bfe46e7c0
+parent 0a5f19a5c5f3124204d1d7e380303efa278d7fcf
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 21:15:00 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 21:15:00 +0530
+
+    Add variables for all
+
+
+:100644 100644 c05a5c4c37a4160ad9bc7cf39f5cc264f3d4723d 8fd3047b31a3127e61c5f536c1d7d63bc139f772 M	jenkinsfile-test.groovy
+:100644 100644 6cb3aeffe5b3b18919d46ab75fee846b8d59af57 14b501de6e35db9faf0c63fb9aa93759b18275bb M	vars/slacknotification.groovy

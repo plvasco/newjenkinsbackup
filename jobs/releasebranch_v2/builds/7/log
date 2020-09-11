@@ -1,0 +1,50 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/releasebranch_v2
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins1633883494850281806.sh
++ git init
+Reinitialized existing Git repository in /var/lib/jenkins/workspace/releasebranch_v2/.git/
++ sh updated_pullrepos.sh
+fatal: destination path 'bitbucket-cloud' already exists and is not an empty directory.
+fatal: destination path 'jenkins-cloud' already exists and is not an empty directory.
+fatal: destination path 'jenkinsinter-cloud' already exists and is not an empty directory.
+fatal: destination path 'test1-cloud' already exists and is not an empty directory.
+Cloning into 'test2-cloud'...
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Cloning into 'test3-cloud'...
+Warning: Permanently added the RSA host key for IP address '18.205.93.2' to the list of known hosts.
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Cloning into 'test4-cloud'...
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Cloning into 'test5-cloud'...
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Cloning into 'test6-cloud'...
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Cloning into 'test7-cloud'...
+git@bitbucket.org: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

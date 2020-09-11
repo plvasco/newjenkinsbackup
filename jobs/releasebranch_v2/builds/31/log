@@ -1,0 +1,94 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/releasebranch_v2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins12918354371843982624.sh
++ sh updated_pullrepos.sh
+Cloning into 'bitbucket-cloud'...
+Cloning into 'jenkins-cloud'...
+Cloning into 'jenkinsinter-cloud'...
+Cloning into 'test1-cloud'...
+Cloning into 'test2-cloud'...
+Cloning into 'test3-cloud'...
+Cloning into 'test4-cloud'...
+Cloning into 'test5-cloud'...
+Cloning into 'test6-cloud'...
+Cloning into 'test7-cloud'...
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins7763568096400004620.sh
++ sh addbranchmerge.sh
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins2876572660408018320.sh
++ sh remotecheck.sh
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

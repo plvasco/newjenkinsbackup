@@ -1,0 +1,71 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#finalistrepolist
+# generate a script ./clone-repos.sh from a list of repos fetched via Bitbucket API
+# note: requires &apos;curl&apos; and &apos;jq&apos; to be installed
+
+set -e
+
+echo -n &apos;&apos; &gt; clone-repos.sh
+chmod +x clone-repos.sh
+
+ORG_USER=pietto@gmx.com
+ORG_PASS=Smooch!991
+curl -s -u &quot;$ORG_USER:$ORG_PASS&quot; https://api.bitbucket.org/2.0/repositories/?role=member | jq -r &apos;.values[] | {slug:.slug, links:.links.clone[] } | select(.links.name==&quot;ssh&quot;) | &quot;git clone \(.links.href) \(.slug)-cloud&quot;&apos; &gt;&gt; clone-repos.sh
+
+# run the generated script
+./clone-repos.sh
+
+# copy data from script to usable file
+ls | grep &apos;cloud&apos; &gt; repolist</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>while read p; do
+  cd &quot;$p&quot;
+  git branch release21
+  echo &quot;branch created&quot;
+  git fetch &amp;&amp; git checkout release21
+  echo &quot;checkout branch&quot;
+  touch branchcheck
+  echo &quot;create file&quot;
+  git add .
+  echo &quot;git add&quot;
+  cd ..
+  echo &quot;reset&quot;
+ done &lt;repolist</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#commitmergepush
+while read p; do
+  cd &quot;$p&quot;
+  git commit -m &quot;adding a change from the feature branch&quot;
+  echo &quot;git commit&quot;
+  git push origin release21
+  echo &quot;push to cloud&quot;
+  cd ..
+  echo &quot;reset&quot;
+ done &lt;repolist</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers/>
+  <buildWrappers>
+    <hpi.CopyDataToWorkspacePlugin plugin="copy-data-to-workspace-plugin@1.0">
+      <folderPath>/home/ubuntu/final</folderPath>
+      <makeFilesExecutable>true</makeFilesExecutable>
+      <deleteFilesAfterBuild>false</deleteFilesAfterBuild>
+    </hpi.CopyDataToWorkspacePlugin>
+  </buildWrappers>
+</project>

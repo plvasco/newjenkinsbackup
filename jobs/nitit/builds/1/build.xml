@@ -1,0 +1,75 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.39">
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>208</queueId>
+  <timestamp>1592543518216</timestamp>
+  <startTime>1592543518218</startTime>
+  <result>FAILURE</result>
+  <duration>421</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(){
+    // stage(&apos;Cleaning Workspace&apos;) {
+    //       cleanWs()
+    // }
+  stage(&apos;Setting the variables values&apos;) {
+            
+             sh &apos; ls -la&apos;
+            dir(&quot;/home/ubuntu/automate&quot;)
+            {
+                sh &apos;ls -la&apos;
+                sh &apos;./allcon.sh&apos;
+            }
+    
+}
+}    
+   </script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>84422495</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>13905240</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>129854382</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>23048913</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>6712890</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>17</iota>
+    <head>1:17</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

@@ -1,0 +1,22 @@
+commit 622d34a1ca276d4456513f9a66d33adfdbe752c6
+tree 629e6930abe8fc633f68d5f63d7bb18130316ebc
+parent ed19aea9a9b11b78a308512616c1187d3389aecd
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:53:53 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:53:53 +0530
+
+    Add fxn for last commit message check.
+
+
+:100644 100644 08f615586712b42adf6236162647e4bee9c403b6 851306fb02fc49c955be1510b3e5cf6585166e3c M	jenkinsfile-test.groovy
+:100644 100644 fdd9f63fffe4f14fbee9d3ceff514e132fefb742 a14cfc1164e9410b258891d4f82ed4d4587cb552 M	vars/getGitAuthor.groovy
+:000000 100644 0000000000000000000000000000000000000000 6c7c2b6bd7350e297ce841b31faff3b8c11fb007 A	vars/gitLastCommitMessage.groovy
+commit ed19aea9a9b11b78a308512616c1187d3389aecd
+tree a5f51c0d8cc24406d23a2442bb16458a9705cef3
+parent f68761e78746ac227f74cf64213ce67e500f496e
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:42:18 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:42:18 +0530
+
+    Git SCM
+
+
+:000000 100644 0000000000000000000000000000000000000000 09b7f3ba4c521c8a70ed2d287a762ce050f43789 A	Jenkinsfile

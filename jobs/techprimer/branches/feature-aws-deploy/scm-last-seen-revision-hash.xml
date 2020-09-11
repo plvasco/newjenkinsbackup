@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@4.2.2">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>feature-aws-deploy</name>
+  </head>
+  <hash>f842d55ed258c86e279897682926e16034d01d3d</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

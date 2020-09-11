@@ -1,0 +1,6 @@
+[filesystem "ip-172-31-15-158.us-east-2.compute.internal|Ubuntu|11.0.7|/dev/xvda1"]
+	timestampResolution = 1644 microseconds
+	minRacyThreshold = 7067 microseconds
+[filesystem "ip-172-31-13-130.us-east-2.compute.internal|Ubuntu|11.0.7|/dev/xvda1"]
+	timestampResolution = 8000 nanoseconds
+	minRacyThreshold = 6165 microseconds

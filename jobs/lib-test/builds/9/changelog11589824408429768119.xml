@@ -1,0 +1,21 @@
+commit 6ee50410bea9d8d111c17f6e7bf00eb8697fa55b
+tree 297860217d0287ce260612da9f5b9160fb0df64f
+parent 4283295aafc375bb26f1bfd18c9c046f03725b22
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:26:07 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:26:07 +0530
+
+    getResultsConverted
+
+
+:100644 100644 ee7a39485d8e54132843cb04f0785b7877da4439 eb457f82a7f0118ed3ac1f78a86db970dd8e1093 M	jenkinsfile-test.groovy
+:000000 100644 0000000000000000000000000000000000000000 9d246009b947904c66827028bab646527869ad68 A	vars/getTestResultsForSlack.groovy
+commit 4283295aafc375bb26f1bfd18c9c046f03725b22
+tree 5bd4a1ecff176f2bdb6cef3b223c20c378fc03b2
+parent d152420c29e168e1fe15b4f955b09eada74896e5
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 19:52:05 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 19:52:05 +0530
+
+    changes
+
+
+:100644 100644 58adc4e3658c6ef8e138e1f8035419a943f003fb ee7a39485d8e54132843cb04f0785b7877da4439 M	jenkinsfile-test.groovy

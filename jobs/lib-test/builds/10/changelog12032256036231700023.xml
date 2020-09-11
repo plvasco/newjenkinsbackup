@@ -1,0 +1,11 @@
+commit e08bb6504cc5e4dc7fcfbd61e3874f79ff236cec
+tree 6479f115ca4c8ef614483a3e7d281f0b1bae51dc
+parent 6ee50410bea9d8d111c17f6e7bf00eb8697fa55b
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:28:46 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:28:46 +0530
+
+    getResultsConverted class import
+
+
+:100644 100644 eb457f82a7f0118ed3ac1f78a86db970dd8e1093 20e43e2f6ecb3bfd49dde9d430db9b18ddad8bba M	jenkinsfile-test.groovy
+:100644 100644 9d246009b947904c66827028bab646527869ad68 fe1857bcc46ef677f63edaa773d8d9914bf2607b M	vars/getTestResultsForSlack.groovy

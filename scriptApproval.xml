@@ -1,0 +1,20 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<scriptApproval plugin="script-security@1.72">
+  <approvedScriptHashes>
+    <string>017d0db438428731cd600b6ebda805065433520f</string>
+    <string>c802ed5a61d358ea929d52cb97aeeb3b0f66b935</string>
+    <string>d6c1213c7acfad4f8703695cff0af594e2b6fde8</string>
+  </approvedScriptHashes>
+  <approvedSignatures/>
+  <aclApprovedSignatures/>
+  <approvedClasspathEntries/>
+  <pendingScripts/>
+  <pendingSignatures>
+    <pendingSignature>
+      <context/>
+      <signature>method groovy.lang.GroovyObject invokeMethod java.lang.String java.lang.Object</signature>
+      <dangerous>true</dangerous>
+    </pendingSignature>
+  </pendingSignatures>
+  <pendingClasspathEntries/>
+</scriptApproval>

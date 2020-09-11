@@ -1,0 +1,10 @@
+commit 0a5f19a5c5f3124204d1d7e380303efa278d7fcf
+tree 7e196888999c690e7042a9ea97fc4021a8e7095d
+parent e2492783592e461529d0248e7e3c1494ece58913
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 21:08:36 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 21:08:36 +0530
+
+    Add variables for all
+
+
+:100644 100644 a82eacb9d91358345cf9b2fa376ae4a32e4b369b 6cb3aeffe5b3b18919d46ab75fee846b8d59af57 M	vars/slacknotification.groovy

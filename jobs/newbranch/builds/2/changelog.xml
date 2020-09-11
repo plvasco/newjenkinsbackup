@@ -1,0 +1,9 @@
+commit 8a98c8ea7f98b9dc35ed228b43966d8b5c6f9408
+tree ae8124e318a8e3ffbf84fe31cdf9f045efcbece8
+parent 0f4c2e2504aa9873290d33cefd73e83c8d56dc53
+author Pietto Vasco <pietto@gmx.com> 2020-06-17 10:53:04 +0000
+committer Pietto Vasco <pietto@gmx.com> 2020-06-17 10:53:04 +0000
+
+    Jenkinsfile edited online with Bitbucket
+
+:100644 100644 9e22432630e76b90c2040a0e7bb76bf7036395d1 d4ee5e48436b9106a5bb890aa6cd01fdc0d9ea14 M	Jenkinsfile

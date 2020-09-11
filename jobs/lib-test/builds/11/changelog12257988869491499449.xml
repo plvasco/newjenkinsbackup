@@ -1,0 +1,10 @@
+commit 8bcd2fd8ea5a5617f4a940401fd65d79ec05921a
+tree 5a180eaa384c0a7e829aff5c0ec13bda55a229be
+parent e08bb6504cc5e4dc7fcfbd61e3874f79ff236cec
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:32:14 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:32:14 +0530
+
+    getResultsConverted class import @CPS
+
+
+:100644 100644 fe1857bcc46ef677f63edaa773d8d9914bf2607b ac77d6e2c88849533504d25dac9ba4f88de7de61 M	vars/getTestResultsForSlack.groovy

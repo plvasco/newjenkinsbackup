@@ -1,0 +1,11 @@
+commit f68761e78746ac227f74cf64213ce67e500f496e
+tree 6dd47a9820c5f5475af8670cd224830a8e6ce6d8
+parent 8bcd2fd8ea5a5617f4a940401fd65d79ec05921a
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:39:33 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:39:33 +0530
+
+    getResultsConverted class import @CPS
+
+
+:100644 100644 20e43e2f6ecb3bfd49dde9d430db9b18ddad8bba 08f615586712b42adf6236162647e4bee9c403b6 M	jenkinsfile-test.groovy
+:000000 100644 0000000000000000000000000000000000000000 fdd9f63fffe4f14fbee9d3ceff514e132fefb742 A	vars/getGitAuthor.groovy

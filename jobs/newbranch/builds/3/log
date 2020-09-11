@@ -1,0 +1,27 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/newbranch
+using credential 098f54aa-330f-4a1a-b977-61bd12405418
+ > /usr/bin/git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > /usr/bin/git config remote.origin.url https://pietto@bitbucket.org/pietto/test006.git # timeout=10
+Fetching upstream changes from https://pietto@bitbucket.org/pietto/test006.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://pietto@bitbucket.org/pietto/test006.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 8a98c8ea7f98b9dc35ed228b43966d8b5c6f9408 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 8a98c8ea7f98b9dc35ed228b43966d8b5c6f9408 # timeout=10
+Commit message: "Jenkinsfile edited online with Bitbucket"
+ > /usr/bin/git rev-list --no-walk 8a98c8ea7f98b9dc35ed228b43966d8b5c6f9408 # timeout=10
+[newbranch] $ /bin/sh -xe /tmp/jenkins8917546240771986545.sh
++ git branch
+* (HEAD detached at 8a98c8e)
++ git checkout -b {newbranchname}
+Switched to a new branch '{newbranchname}'
++ git branch
+* {newbranchname}
+using credential 098f54aa-330f-4a1a-b977-61bd12405418
+Finished: SUCCESS

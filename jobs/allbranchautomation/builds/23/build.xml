@@ -1,0 +1,148 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-build plugin="workflow-job@2.39">
+  <actions>
+    <hudson.model.ParametersAction>
+      <safeParameters class="sorted-set"/>
+      <parameters>
+        <hudson.model.StringParameterValue>
+          <name>BranchName</name>
+          <description></description>
+          <value>master</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>NewBranchName</name>
+          <description></description>
+          <value>devsecops</value>
+        </hudson.model.StringParameterValue>
+        <hudson.model.StringParameterValue>
+          <name>FILENAME</name>
+          <description></description>
+          <value>dockerans</value>
+        </hudson.model.StringParameterValue>
+      </parameters>
+      <parameterDefinitionNames>
+        <string>BranchName</string>
+        <string>NewBranchName</string>
+        <string>FILENAME</string>
+      </parameterDefinitionNames>
+    </hudson.model.ParametersAction>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause>
+            <userId>admin</userId>
+          </hudson.model.Cause_-UserIdCause>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="workflow-cps-global-lib@2.16">
+      <libraries/>
+    </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
+  </actions>
+  <queueId>337</queueId>
+  <timestamp>1592832294105</timestamp>
+  <startTime>1592832294108</startTime>
+  <result>FAILURE</result>
+  <duration>44320</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
+    <result>FAILURE</result>
+    <script>node(){
+    stage(&apos;Cleaning Workspace&apos;) {
+          cleanWs()
+    }
+    
+	stage(&apos;Setting the variables values&apos;) {
+            
+                sh &apos; ls -la&apos;
+    	        sh &apos;&apos;&apos; #!/bin/bash
+                ORG_USER=pietto
+                ORG_PASS=Smooch!991
+                ORG_NAME=pietto
+				curl -s -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/pietto?pagelen=100 | jq -r &apos;.values[] | .name&apos;  &gt;  repoinfo.json
+
+
+				for REPO_NAME in `cat repoinfo.json`; do
+        			echo $REPO_NAME
+        			git clone https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git
+
+        		done
+        		&apos;&apos;&apos;
+        		sh &apos;ls -la&apos;
+        		sh &apos;pwd&apos;
+	}
+	stage(&apos;automation&apos;)
+	 {
+	     	echo &apos;asasa&apos;
+	        sh &apos;pwd&apos;
+	 		sh &apos;&apos;&apos; 
+	 		#!/bin/bash
+	 		 ORG_USER=pietto
+             ORG_PASS=Smooch!991
+             ORG_NAME=pietto
+    	   	curl -s -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/pietto?pagelen=100 | jq -r &apos;.values[] | .name&apos;  &gt;  repoinfo.json
+			for REPO_NAME in `cat repoinfo.json`; do
+        	      echo $REPO_NAME
+		            cd /var/lib/jenkins/workspace/allbranchautomation/$REPO_NAME 
+		            git checkout -b ${NewBranchName}
+		            touch ${FILENAME}
+		            git add .
+		            git commit -m &quot;adding new file&quot;
+		            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git ${NewBranchName}
+		            
+		            git checkout master
+                    git pull origin master
+                    git merge ${NewBranchName}
+                    git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git master
+                    git tag  ${BUILD_NUMBER}
+                    git tag -n
+                    
+                    
+                    git checkout develop
+                    git pull origin develop
+                    git merge master
+                    git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git develop         
+		     
+		     
+		       done
+		        &apos;&apos;&apos; 
+	}
+		
+	
+	}
+        </script>
+    <loadedScripts class="map"/>
+    <durabilityHint>MAX_SURVIVABILITY</durabilityHint>
+    <timings class="map">
+      <entry>
+        <string>flowNode</string>
+        <long>165087696</long>
+      </entry>
+      <entry>
+        <string>classLoad</string>
+        <long>8398697</long>
+      </entry>
+      <entry>
+        <string>run</string>
+        <long>430315010</long>
+      </entry>
+      <entry>
+        <string>parse</string>
+        <long>28117851</long>
+      </entry>
+      <entry>
+        <string>saveProgram</string>
+        <long>64360308</long>
+      </entry>
+    </timings>
+    <sandbox>true</sandbox>
+    <iota>27</iota>
+    <head>1:27</head>
+    <done>true</done>
+    <resumeBlocked>false</resumeBlocked>
+  </execution>
+  <completed>true</completed>
+  <checkouts class="hudson.util.PersistedList"/>
+</flow-build>

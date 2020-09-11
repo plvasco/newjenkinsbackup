@@ -1,0 +1,134 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<flow-definition plugin="workflow-job@2.39">
+  <actions>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobAction plugin="pipeline-model-definition@1.6.0"/>
+    <org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction plugin="pipeline-model-definition@1.6.0">
+      <jobProperties/>
+      <triggers/>
+      <parameters/>
+      <options/>
+    </org.jenkinsci.plugins.pipeline.modeldefinition.actions.DeclarativeJobPropertyTrackerAction>
+  </actions>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties>
+    <hudson.model.ParametersDefinitionProperty>
+      <parameterDefinitions>
+        <hudson.model.ChoiceParameterDefinition>
+          <name>BranchName</name>
+          <description></description>
+          <choices class="java.util.Arrays$ArrayList">
+            <a class="string-array">
+              <string>master</string>
+              <string>develop</string>
+            </a>
+          </choices>
+        </hudson.model.ChoiceParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>NewBranchName</name>
+          <description>release name</description>
+          <defaultValue>release</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>FILENAME</name>
+          <description>demofile</description>
+          <defaultValue>demofile</defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>REPOS_TO_FORK</name>
+          <description>test</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+        <hudson.model.StringParameterDefinition>
+          <name>TAG</name>
+          <description>Tag name to master</description>
+          <defaultValue></defaultValue>
+          <trim>false</trim>
+        </hudson.model.StringParameterDefinition>
+      </parameterDefinitions>
+    </hudson.model.ParametersDefinitionProperty>
+  </properties>
+  <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.80">
+    <script>pipeline{
+    agent any
+    stages{
+        stage(&apos;Cleaning Workspace&apos;) {
+            steps {
+                cleanWs()
+            }
+        }
+        stage(&apos;Getting the repos list and clone them.&apos;) {
+            steps {
+                sh(returnStdout: true, script: &apos;&apos;&apos;#!/bin/bash
+                    ORG_USER=pietto
+                    ORG_PASS=Smooch!991
+                    ORG_NAME=pietto
+
+                    for CUSTOM_WORD in ${REPOS_TO_FORK}
+                    do
+
+                    for i in {1..20};do if [[ $(curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq . | wc -l) -gt 10 ]];then curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq &apos;.values | .[].slug&apos; | tr -d &apos;&quot;&apos; | grep $CUSTOM_WORD &gt; repoinfo.json ;fi;done;
+
+                    done
+
+                    for REPO_NAME in `cat repoinfo.json`; do
+                        echo $REPO_NAME
+                        git clone https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git
+                    done
+                &apos;&apos;&apos;.stripIndent())
+            }
+        }
+        stage(&apos;automation&apos;) {
+            steps {
+                sh(returnStdout: true, script: &apos;&apos;&apos;#!/bin/bash
+                ORG_USER=pietto
+                ORG_PASS=Smooch!991
+                ORG_NAME=pietto
+
+                pwd
+                ls -la
+
+                for CUSTOM_WORD in ${REPOS_TO_FORK}
+                do
+
+                for i in {1..20};do if [[ $(curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq . | wc -l) -gt 10 ]];then curl -s -X GET -u &quot;${ORG_USER}:${ORG_PASS}&quot; https://api.bitbucket.org/2.0/repositories/\\{pietto\\}\\?pagelen\\=100\\&amp;page\\=$i | jq &apos;.values | .[].slug&apos; | tr -d &apos;&quot;&apos; | grep $CUSTOM_WORD &gt; repoinfo.json ;fi;done;
+
+                done
+                    for REPO_NAME in `cat repoinfo.json`; do
+                        echo $REPO_NAME
+                            cd /var/lib/jenkins/workspace/allbranchautomation_rev1/$REPO_NAME 
+                            git checkout -b ${NewBranchName}
+                            touch ${FILENAME}
+                            git add .
+                            git commit -m &quot;adding new file&quot;
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git ${NewBranchName}
+                            
+                            git checkout master
+                            git pull origin master
+                            git merge ${NewBranchName}
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git master
+                            git tag  ${TAG}
+                            git tag -n
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git  ${BUILD_NUMBER}
+                            
+                            
+                            git checkout develop
+                            git pull origin develop
+                            git merge master
+                            git push https://&quot;${ORG_USER}:${ORG_PASS}&quot;@bitbucket.org/$ORG_NAME/$REPO_NAME.git develop         
+                    
+                    
+                    done
+                &apos;&apos;&apos;.stripIndent())
+            }
+        }
+    }
+}</script>
+    <sandbox>true</sandbox>
+  </definition>
+  <triggers/>
+  <disabled>false</disabled>
+</flow-definition>

@@ -1,0 +1,153 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/releasebranch_v2
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] Done
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins571192105088231954.sh
++ sh updated_pullrepos.sh
+Cloning into 'bitbucket-cloud'...
+Cloning into 'jenkins-cloud'...
+Cloning into 'jenkinsinter-cloud'...
+Cloning into 'test1-cloud'...
+Cloning into 'test2-cloud'...
+Cloning into 'test3-cloud'...
+Cloning into 'test4-cloud'...
+Cloning into 'test5-cloud'...
+Cloning into 'test6-cloud'...
+Cloning into 'test7-cloud'...
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins4985733729534072544.sh
++ sh addbranchmerge.sh
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+branch created
+Switched to branch 'release01'
+checkout branch
+create file
+git add
+reset
+[releasebranch_v2] $ /bin/sh -xe /tmp/jenkins13882945120162697597.sh
++ sh mergepush.sh
+[release01 48c23a4] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 52c4e7c] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 ec64799] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 96c9f1c] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 313cd19] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 00d78e0] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 0339cb6] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 f98568b] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 90d716f] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+[release01 8990fe7] adding a change from the feature branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 branchcheck
+git commit
+fatal: could not read Password for 'https://pietto@bitbucket.org': No such device or address
+push to cloud
+reset
+Finished: SUCCESS

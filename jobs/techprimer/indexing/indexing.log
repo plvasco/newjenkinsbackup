@@ -1,0 +1,44 @@
+Started
+[Tue Jun 23 13:28:47 UTC 2020] Starting branch indexing...
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git ls-remote --symref -- https://github.com/TechPrimers/jenkins-example.git # timeout=10
+Creating git repository in /var/lib/jenkins/caches/git-47d46a83a553dd2d4c061f71da71716b
+ > /usr/bin/git init /var/lib/jenkins/caches/git-47d46a83a553dd2d4c061f71da71716b # timeout=10
+Setting origin to https://github.com/TechPrimers/jenkins-example.git
+ > /usr/bin/git config remote.origin.url https://github.com/TechPrimers/jenkins-example.git # timeout=10
+Fetching & pruning origin...
+Listing remote references...
+ > /usr/bin/git config --get remote.origin.url # timeout=10
+ > /usr/bin/git --version # timeout=10
+ > /usr/bin/git ls-remote -h -- https://github.com/TechPrimers/jenkins-example.git # timeout=10
+Fetching upstream changes from origin
+ > /usr/bin/git config --get remote.origin.url # timeout=10
+ > /usr/bin/git fetch --tags --progress --prune -- origin +refs/heads/*:refs/remotes/origin/* # timeout=10
+Checking branches...
+  Checking branch develop
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: develop
+  Checking branch master
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: master
+  Checking branch feature-1
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: feature-1
+  Checking branch feature-aws-deploy
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: feature-aws-deploy
+  Checking branch feature-test-pipeline-cucumber
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: feature-test-pipeline-cucumber
+  Checking branch feature/cicd-pcf
+      ‘Jenkinsfile’ found
+    Met criteria
+Scheduled build for branch: feature/cicd-pcf
+Processed 6 branches
+[Tue Jun 23 13:28:47 UTC 2020] Finished branch indexing. Indexing took 0.77 sec
+Finished: SUCCESS

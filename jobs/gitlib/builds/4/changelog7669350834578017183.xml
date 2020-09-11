@@ -1,0 +1,10 @@
+commit 4ed058c0cdb5c66fe39adeca16c7eb8cb1a22df3
+tree a86250e8d1d4a3de23870071f77223c940dfe6e8
+parent 622d34a1ca276d4456513f9a66d33adfdbe752c6
+author Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:56:24 +0530
+committer Naveen Guleria <mavenishere@gmail.com> 2020-07-10 20:56:24 +0530
+
+    Add fxn for last commit message check.
+
+
+:100644 100644 6c7c2b6bd7350e297ce841b31faff3b8c11fb007 415a277681180f2b27299de5d5d59bfade8c52ab R077	vars/gitLastCommitMessage.groovy	vars/getLastCommitMessage.groovy

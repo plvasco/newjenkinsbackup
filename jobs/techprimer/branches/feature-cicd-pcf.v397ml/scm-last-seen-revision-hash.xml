@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@4.2.2">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>feature/cicd-pcf</name>
+  </head>
+  <hash>acca84e265a23dfa47b6578a267b3a74b08c7027</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

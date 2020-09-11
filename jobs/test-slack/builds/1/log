@@ -1,0 +1,29 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/test-slack
+using credential Jenkins-shared-lib
+Cloning the remote Git repository
+Cloning repository git@github.com:guleriagishere/sharedlib.git
+ > /usr/bin/git init /var/lib/jenkins/workspace/test-slack # timeout=10
+Fetching upstream changes from git@github.com:guleriagishere/sharedlib.git
+ > /usr/bin/git --version # timeout=10
+using GIT_SSH to set credentials Jenkins-shared-lib
+ > /usr/bin/git fetch --tags --progress -- git@github.com:guleriagishere/sharedlib.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url git@github.com:guleriagishere/sharedlib.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url git@github.com:guleriagishere/sharedlib.git # timeout=10
+Fetching upstream changes from git@github.com:guleriagishere/sharedlib.git
+using GIT_SSH to set credentials Jenkins-shared-lib
+ > /usr/bin/git fetch --tags --progress -- git@github.com:guleriagishere/sharedlib.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > /usr/bin/git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 3434110fda77fef242d2d28aa85389b4ef978027 (refs/remotes/origin/master)
+ > /usr/bin/git config core.sparsecheckout # timeout=10
+ > /usr/bin/git checkout -f 3434110fda77fef242d2d28aa85389b4ef978027 # timeout=10
+Commit message: "abc"
+First time build. Skipping changelog.
+[test-slack] $ /bin/sh -xe /tmp/jenkins15017423732290584743.sh
++ echo Hello world
+Hello world
+[Slack Notifications] will send OnSuccessNotification because build matches and user preferences allow it
+Finished: SUCCESS

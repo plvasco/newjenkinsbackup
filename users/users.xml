@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<hudson.model.UserIdMapper>
+  <version>1</version>
+  <idToDirectoryNameMap class="concurrent-hash-map">
+    <entry>
+      <string>mavenishere</string>
+      <string>mavenishere_797827030360578545</string>
+    </entry>
+    <entry>
+      <string>pietto</string>
+      <string>pietto_1153866728046747010</string>
+    </entry>
+    <entry>
+      <string>leonvasco</string>
+      <string>leonvasco_16490926029730366491</string>
+    </entry>
+    <entry>
+      <string>nitin.nn711</string>
+      <string>nitinnn711_14604266935768555890</string>
+    </entry>
+    <entry>
+      <string>admin</string>
+      <string>admin_3269074311650674418</string>
+    </entry>
+  </idToDirectoryNameMap>
+</hudson.model.UserIdMapper>

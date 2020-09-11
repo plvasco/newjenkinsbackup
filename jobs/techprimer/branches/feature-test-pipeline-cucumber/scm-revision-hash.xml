@@ -1,0 +1,7 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<jenkins.plugins.git.GitBranchSCMRevision plugin="git@4.2.2">
+  <head class="jenkins.plugins.git.GitBranchSCMHead">
+    <name>feature-test-pipeline-cucumber</name>
+  </head>
+  <hash>3fe0f99d2822774319c6a9c1c6e99f82c11e3391</hash>
+</jenkins.plugins.git.GitBranchSCMRevision>

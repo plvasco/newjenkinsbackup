@@ -1,0 +1,980 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running in Durability level: MAX_SURVIVABILITY
+[8mha:////4JzQ5a3ORR2Aii60HhUv2ECZXltetXbVofeEZj1K3xcfAAAAoh+LCAAAAAAAAP9tjTEOwjAQBM8BClpKHuFItIiK1krDC0x8GCfWnbEdkooX8TX+gCESFVvtrLSa5wtWKcKBo5UdUu8otU4GP9jS5Mixv3geZcdn2TIl9igbHBs2eJyx4YwwR1SwULBGaj0nRzbDRnX6rmuvydanHMu2V1A5c4MHCFXMWcf8hSnC9jqYxPTz/BXAFEIGsfuclm8zQVqFvQAAAA==[0m[Pipeline] Start of Pipeline
+[8mha:////4IdnChl9l6G4hXAEuShp/yQ6FaJhTRQQd4Kjmb6t5iwIAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycohUghExsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jduZBmjwAAAAA==[0m[Pipeline] node
+Running on [8mha:////4FjOp36XCM+43LtkNjAPG5srO2QSver89qY/Jdhg3DjGAAAAnh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAz2EgZh/eT83ILSktQifY3cxGIgrakPAHib2iPIAAAA[0mJenkins in /var/lib/jenkins/workspace/allbranchautomation
+[8mha:////4Lkg7mM80WMHXPrSkIk+4SO5oo0mTqAWW4Ua17Zr/wwyAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gA0xsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jfoP95RwAAAAA==[0m[Pipeline] {
+[8mha:////4BMrxdhhsDqXbtB9wRMYpdvQBS2qw0rISF8xI44Q2j2TAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0gQkxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jc09154wAAAAA==[0m[Pipeline] stage
+[8mha:////4NNQQjz0poTPupLbCSK7mPJC+vC4UfEfzlWpIBya7r5tAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+KOrAycoh0ggUxsUZZOEFIQkgb/d8mKe3EibgadyBQiQlLlmxL1nu+oE4RjhQdby12HpP2vA+jK4lPFLtroIm3dOGaMFGwXNpJkrGnpUrKFhaxClYC1hZ1oOTRZdiIVt1VExS65pxj2Q4CKm8GeAAThZxVzN8yR9jeRpMIf5y/AJj7DGxXvP/86jek7ggRwAAAAA==[0m[Pipeline] { (Cleaning Workspace)
+[8mha:////4MMggADd59MJAjPzyX5l895WgNVAlc4YchURqmyYPKYcAAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbaWGsbAmNJ0AWEZb8zwLrbuWJvJp3kLiJlZNMMm+a93rDOic4UbLcG+wdZu14DKOti0+U+lugiXu6ck2YKRguzSSpM+cFJRUDS1gDKwEbgzpQdmgLbIVXD9UGhba9lFS/o4DGdQM8gYlqLiqVL8wJdvexy4Q/z18BzLEA29ce4gfg7KmOvAAAAA==[0m[Pipeline] cleanWs
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Deferred wipeout is used...
+[WS-CLEANUP] done
+[8mha:////4HJkqq3LsWx7+APtz8udDihIVeF332uGR+wzUBViQbK8AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQTbGRNjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9Dg2gqvAAAAA==[0m[Pipeline] }
+[8mha:////4GJ0N7sEfvL5WvnDaKLxuGtUe2cMtjfNIflfwDOPusD1AAAAoh+LCAAAAAAAAP9tjTEOAiEURD9rLGwtPQRbWRhjZUtoPAGyiLDkfxZYdytP5NW8g8RNrJxkknnTvNcb1jnBiZLl3mDvMGvHYxhtXXyi1N8CTdzTlWvCTMFwaSZJnTkvKKkYWMIaWAnYGNSBskNbYCu8eqg2KLTtpaT6HQU0rhvgCUxUc1GpfGFOsLuPXSb8ef4KYI6xADvU7j9J+wGOvAAAAA==[0m[Pipeline] // stage
+[8mha:////4J5aWD8cYk4wxm9f1cvzbno8Q0Rm7ijt6bETRrIv5nUwAAAAph+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQDEh2iorXc8AITG+PEugv2haTiRXyNPxCIRMVWOyut5vmCMic4UPKycdgGzHWQXez91ORAqb1EGmRDZ1kTZopOajdosu44oyZ2MEcUsFCwdFhHygE9w0o15m6qaNBXJ07TtldQBHuDBwg1mdkk/sKYYH3tbSb8ef4KYOwYxI6h2G4+x/INtuQqUcEAAAA=[0m[Pipeline] stage
+[8mha:////4EBiGAlcyYGPal4u9lXjtPI45bdjP7Q3t/lxPUpr5fFSAAAApR+LCAAAAAAAAP9tjTEOwjAUQ3+DOrAycoiUzoiJNerCCUITQtLo/zZJSSdOxNW4Ay2VmPBg2Zas93pDGQOcKBjuNHYWY2t570czJ54pdDdPmTu68pYwkte80bkhpc9rbShpWFUw2AjYamw9RYsmwU44+ZCVl2iqSwrzdhTArBrgCYWYyUmG9C1TgP19VJHwx/kLgKlPwOrDYvXyLD8BobDcwgAAAA==[0m[Pipeline] { (Setting the variables values)
+[8mha:////4A55XhFp+XzR34ZTKuzLM5E8Jh8zumaFko1WYDtw2VRWAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggysXWsbBkaT4AJIoT5nwCRVJ7Iq3kH0cxYucXOvm3e8wXrGOBIQTOrcDAYO8O8m3RZLFMYro4ys3RhHWEkp5hQWVCvTgsKSgqWVDWsOGwUdo6iQZ1gy628y8ZJ1M05hfIdONSmH+EBFS/mJEP6whxgd5v6SPjz/BXA7BPUbfupvX8DpQJrNb4AAAA=[0m[Pipeline] sh
++ ls -la
+total 8
+drwxr-xr-x  2 jenkins jenkins 4096 Jun 22 14:16 .
+drwxr-xr-x 31 jenkins jenkins 4096 Jun 22 14:16 ..
+[8mha:////4FHi6ZUBMU1Pgvz3M5RwhTBxLLpztjKXTraTfKyqI6BvAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyGUvHypah8QSYIEKY/wkQSeWJvJp3EM2MlVvs7NvmPV+wjgGOFDSzCgeDsTPMu0mXxTKF4eooM0sX1hFGcooJlQX16rSgoKRgSVXDisNGYecoGtQJttzKu2ycRN2cUyjfgUNt+hEeUPFiTjKkL8wBdrepj4Q/z18BzD5B3baf2vs35DNwLL4AAAA=[0m[Pipeline] sh
++ ORG_USER=pietto
++ ORG_PASS=Smooch!991
++ ORG_NAME=pietto
++ jq -r .values[] | .name
++ curl -s -u pietto:Smooch!991 https://api.bitbucket.org/2.0/repositories/pietto?pagelen=100
++ cat repoinfo.json
++ echo final
+final
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/final.git
+Cloning into 'final'...
++ echo Test001
+Test001
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/Test001.git
+Cloning into 'Test001'...
++ echo Test002
+Test002
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/Test002.git
+Cloning into 'Test002'...
++ echo test003
+test003
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test003.git
+Cloning into 'test003'...
++ echo Test004
+Test004
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/Test004.git
+Cloning into 'Test004'...
++ echo test005
+test005
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test005.git
+Cloning into 'test005'...
++ echo test006
+test006
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test006.git
+Cloning into 'test006'...
++ echo testing
+testing
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/testing.git
+Cloning into 'testing'...
++ echo Test001_fork
+Test001_fork
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/Test001_fork.git
+Cloning into 'Test001_fork'...
++ echo _fork
+_fork
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/_fork.git
+Cloning into '_fork'...
++ echo test002_fork
+test002_fork
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test002_fork.git
+Cloning into 'test002_fork'...
++ echo test003_fork
+test003_fork
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test003_fork.git
+Cloning into 'test003_fork'...
++ echo test007
+test007
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test007.git
+Cloning into 'test007'...
++ echo test006_fork
+test006_fork
++ git clone https://pietto:Smooch!991@bitbucket.org/pietto/test006_fork.git
+Cloning into 'test006_fork'...
+[8mha:////4Mpn0+J2CKtVEmAhWnGjQeWm0AA9oBzyGUhrI6LwvOBrAAAApB+LCAAAAAAAAP9tjbEOwiAURV9rHFwd/QiaJm7GyZWw+AXYIkLJexSodPKL/DX/QbSJk3e4uecu5/mCdQxwpKCZVTgYjJ1h3k26LJYpDFdHmVm6sI4wklNMqCyoV6cFBSUFS6oaVhw2CjtH0aBOsOVW3mXjJOrmnEL5Dhxq04/wgIoXc5IhfWEOsLtNfST8ef4KYPYJ6rb91N6/ASOlMWO+AAAA[0m[Pipeline] sh
++ ls -la
+total 68
+drwxr-xr-x 16 jenkins jenkins 4096 Jun 22 14:16 .
+drwxr-xr-x 30 jenkins jenkins 4096 Jun 22 14:16 ..
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 Test001
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 Test001_fork
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 Test002
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 Test004
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 _fork
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 final
+-rw-r--r--  1 jenkins jenkins  128 Jun 22 14:16 repoinfo.json
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test002_fork
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test003
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test003_fork
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test005
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test006
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test006_fork
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 test007
+drwxr-xr-x  3 jenkins jenkins 4096 Jun 22 14:16 testing
+[8mha:////4HDWVly9KBjV0TLdWrOmUg9eK/Z3iN/lmg/Qig8H8oPCAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyKawcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMPsEddt+au/fYpQqer4AAAA=[0m[Pipeline] sh
++ pwd
+/var/lib/jenkins/workspace/allbranchautomation
+[8mha:////4M3jY8niW0z/KwYw8nMKoOPXriXdcpUDw3eeueI7ogCxAAAAox+LCAAAAAAAAP9tjTESwiAURH/iWNhaeggyaWwcK1uGxhNggghh/idAJJUn8mreQTQzVm6xs2+b93zBOgY4UtDMKhwMxs4w7yZdFssUhqujzCxdWEcYySkmVBbUq9OCgpKCJVUNKw4bhZ2jaFAn2HIr77JxEnVzTqF8Bw616Ud4QMWLOcmQvjAH2N2mPhL+PH8FMHufoG73n2rfMnS0t74AAAA=[0m[Pipeline] }
+[8mha:////4AYM/AD2ozu14vbWxYHQT7I/c4/9fadyuDFZ7gObMn6WAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICFQWiSmu54QUmNsaJdWdsh6TiRXyNPxCIRMUWq51t5vmCZYpw5GixNdQ5So3D4Hs7LRw4dhfPA7Z8xoYpsTcozSBZm3pGydnAnKKEhYCVocZzcmQzrEWr7qryimx1ynH6DgJKp2/wgEJM5qxi/sIYYXPtdWL6ef4KYAwhQ7nbf2r7BgGX7wu+AAAA[0m[Pipeline] // stage
+[8mha:////4Exnc5tH9PltDjJfRBk3QEYXzUbSym7/EuPFK2xOzGLKAAAApx+LCAAAAAAAAP9tjTEOwjAQBM9BKWgpeYQjJAokREVrueEFJjbGiXUX7AtJxYv4Gn8gEImKrXZWWs3zBWVOcKDkZeOwDZjrILvY+6nJgVJ7iTTIhs6yJswUndRu0GTdcUZN7GCOKGChYOmwjpQDeoaVaszdVNGgr06cpm2voAj2Bg8QajKzSfyFMcH62ttM+PP8FcDYMYgtQ7HZfY7lG9tmeb3BAAAA[0m[Pipeline] stage
+[8mha:////4BtwAFkVE+xSGq1gyLfUmTM+gSxMpTWIzZ7X6GaB5VWIAAAApx+LCAAAAAAAAP9tjTEOwjAUQ3+LOrAycohUbCDE1DXKwglCE0La6P/yk9JOnIircQdaKjHhwbItWe/1hiIynIidaCy2HmPtRRd6NyUxELfXQINo6CJqwkjBCmUHRcZWS1WULCzKclhJWFusA0WPLsFGNvqhy6DRlefE03aUkHtzhydkciInzelbRobtrTeR8Mf5C4CxS5Dv9rMd5mfxASnCIIrCAAAA[0m[Pipeline] { (automation)
+[8mha:////4Hr06l4SSwhQIEhBa9Wbk7+zCFy76L+2AxqkWHfLkfEJAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOICdAilorXc8AKTGOPEugu2g1PxIr7GH7CIRMUWq51t5vWGZfBQszfYaeothcbi4EaTFyb2/dVxwo4v2DAFdhqlTpJbfZpRctQwpyhhIWClqXEcLJkIa9Gph6qcIlOdo8/fUUBp2zs8oRDZHJWPX5g8bG5jG5h+nr8CmIYI5e6Qa78dPhmQ9Da+AAAA[0m[Pipeline] echo
+asasa
+[8mha:////4IQ44/hDvFxm73aMJ6VQ1rI3XUSHaVwiSMdJczdBG8f9AAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOKi0CFEldZKwwtMbIwT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYPBXtNgKXYWvRtNXjhxGK6OJ+z5gh1TZKex1VPLSjcLtpw0LClKWAnYaOocR0smwVb08iErJ8lU5xTydxRQWnWHJxQim5MM6QtzgN1tVJHp5/krgNknKOtDrn3tP1ih7y++AAAA[0m[Pipeline] sh
++ pwd
+/var/lib/jenkins/workspace/allbranchautomation
+[8mha:////4FG8naZ0JUbDUO8WbBtkglODrgWJmDsLPj7XEjkB6vguAAAApB+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPMIR6RCiSmul4QUmPowT687YDknFi/gaf8AiEhVbrHa2mdcb1jHAiYMRPdJgKXZWeDeavMTEYbg6nkTPF9ExRXYoWpxa1tgs2HJCWFKUsJKwQeocR0smwVb26qEqp8hU5xTyd5RQWn2HJxQym5MK6QtzgN1t1JHp5/krgNknKPeHXHXtP5vywgS+AAAA[0m[Pipeline] sh
++ ORG_USER=pietto
++ ORG_PASS=Smooch!991
++ ORG_NAME=pietto
++ jq -r .values[] | .name
++ curl -s -u pietto:Smooch!991 https://api.bitbucket.org/2.0/repositories/pietto?pagelen=100
++ cat repoinfo.json
++ echo final
+final
++ cd /var/lib/jenkins/workspace/allbranchautomation/final
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 2db4ad4] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/final.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/final/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/final.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/final
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 10a5803..2db4ad4
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/final.git master
+To https://bitbucket.org/pietto/final.git
+   10a5803..2db4ad4  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+3.0             adding a new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/final.git 29
+To https://bitbucket.org/pietto/final.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/final
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 10a5803..2db4ad4
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/final.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/final/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/final.git
+   10a5803..2db4ad4  develop -> develop
++ echo Test001
+Test001
++ cd /var/lib/jenkins/workspace/allbranchautomation/Test001
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 25ad47e] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test001/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test001.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/Test001
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 55c380c..25ad47e
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001.git master
+To https://bitbucket.org/pietto/Test001.git
+   55c380c..25ad47e  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001.git 29
+To https://bitbucket.org/pietto/Test001.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/Test001
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 55c380c..25ad47e
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test001/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test001.git
+   55c380c..25ad47e  develop -> develop
++ echo Test002
+Test002
++ cd /var/lib/jenkins/workspace/allbranchautomation/Test002
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 1903764] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test002.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test002/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test002.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/Test002
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 804db8a..1903764
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test002.git master
+To https://bitbucket.org/pietto/Test002.git
+   804db8a..1903764  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test002.git 29
+To https://bitbucket.org/pietto/Test002.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/Test002
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 804db8a..1903764
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test002.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test002/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test002.git
+   804db8a..1903764  develop -> develop
++ echo test003
+test003
++ cd /var/lib/jenkins/workspace/allbranchautomation/test003
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid a1c249e] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test003/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test003.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test003
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 0704461..a1c249e
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003.git master
+To https://bitbucket.org/pietto/test003.git
+   0704461..a1c249e  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003.git 29
+To https://bitbucket.org/pietto/test003.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test003
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 0704461..a1c249e
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test003/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test003.git
+   0704461..a1c249e  develop -> develop
++ echo Test004
+Test004
++ cd /var/lib/jenkins/workspace/allbranchautomation/Test004
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 192fa67] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test004.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test004/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test004.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/Test004
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 068c93d..192fa67
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test004.git master
+To https://bitbucket.org/pietto/Test004.git
+   068c93d..192fa67  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test004.git 29
+To https://bitbucket.org/pietto/Test004.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/Test004
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 068c93d..192fa67
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test004.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test004/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test004.git
+   068c93d..192fa67  develop -> develop
++ echo test005
+test005
++ cd /var/lib/jenkins/workspace/allbranchautomation/test005
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid aa0ee04] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test005.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test005/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test005.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test005
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 3b520bb..aa0ee04
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test005.git master
+To https://bitbucket.org/pietto/test005.git
+   3b520bb..aa0ee04  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test005.git 29
+To https://bitbucket.org/pietto/test005.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test005
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 3b520bb..aa0ee04
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test005.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test005/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test005.git
+   3b520bb..aa0ee04  develop -> develop
++ echo test006
+test006
++ cd /var/lib/jenkins/workspace/allbranchautomation/test006
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 69b9ee1] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test006/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test006.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test006
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 2ef026d..69b9ee1
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006.git master
+To https://bitbucket.org/pietto/test006.git
+   2ef026d..69b9ee1  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006.git 29
+To https://bitbucket.org/pietto/test006.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test006
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 2ef026d..69b9ee1
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test006/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test006.git
+   2ef026d..69b9ee1  develop -> develop
++ echo testing
+testing
++ cd /var/lib/jenkins/workspace/allbranchautomation/testing
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid cf1ffcb] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/testing.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/testing/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/testing.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/testing
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 31e7caf..cf1ffcb
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/testing.git master
+To https://bitbucket.org/pietto/testing.git
+   31e7caf..cf1ffcb  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/testing.git 29
+To https://bitbucket.org/pietto/testing.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/testing
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Merge made by the 'recursive' strategy.
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/testing.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/testing/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/testing.git
+   d9a7c47..307b468  develop -> develop
++ echo Test001_fork
+Test001_fork
++ cd /var/lib/jenkins/workspace/allbranchautomation/Test001_fork
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 187852b] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001_fork.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test001_fork/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test001_fork.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/Test001_fork
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating fbdd6f2..187852b
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001_fork.git master
+To https://bitbucket.org/pietto/Test001_fork.git
+   fbdd6f2..187852b  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001_fork.git 29
+To https://bitbucket.org/pietto/Test001_fork.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/Test001_fork
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating fbdd6f2..187852b
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/Test001_fork.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test001_fork/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/Test001_fork.git
+   fbdd6f2..187852b  develop -> develop
++ echo _fork
+_fork
++ cd /var/lib/jenkins/workspace/allbranchautomation/_fork
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 10fcf91] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/_fork.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/_fork/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/_fork.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/_fork
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 6540f1a..10fcf91
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/_fork.git master
+To https://bitbucket.org/pietto/_fork.git
+   6540f1a..10fcf91  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/_fork.git 29
+To https://bitbucket.org/pietto/_fork.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/_fork
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 6540f1a..10fcf91
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/_fork.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/_fork/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/_fork.git
+   6540f1a..10fcf91  develop -> develop
++ echo test002_fork
+test002_fork
++ cd /var/lib/jenkins/workspace/allbranchautomation/test002_fork
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 2edae2d] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test002_fork.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test002_fork/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test002_fork.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test002_fork
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating fc2e0e2..2edae2d
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test002_fork.git master
+To https://bitbucket.org/pietto/test002_fork.git
+   fc2e0e2..2edae2d  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test002_fork.git 29
+To https://bitbucket.org/pietto/test002_fork.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test002_fork
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating fc2e0e2..2edae2d
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test002_fork.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test002_fork/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test002_fork.git
+   fc2e0e2..2edae2d  develop -> develop
++ echo test003_fork
+test003_fork
++ cd /var/lib/jenkins/workspace/allbranchautomation/test003_fork
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 2e4f5c8] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003_fork.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test003_fork/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test003_fork.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test003_fork
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating a403bb9..2e4f5c8
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003_fork.git master
+To https://bitbucket.org/pietto/test003_fork.git
+   a403bb9..2e4f5c8  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003_fork.git 29
+To https://bitbucket.org/pietto/test003_fork.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test003_fork
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating a403bb9..2e4f5c8
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test003_fork.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test003_fork/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test003_fork.git
+   a403bb9..2e4f5c8  develop -> develop
++ echo test007
+test007
++ cd /var/lib/jenkins/workspace/allbranchautomation/test007
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid aa99afb] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test007.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test007/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test007.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test007
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating ea71d7e..aa99afb
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test007.git master
+To https://bitbucket.org/pietto/test007.git
+   ea71d7e..aa99afb  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test007.git 29
+To https://bitbucket.org/pietto/test007.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test007
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Merge made by the 'recursive' strategy.
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test007.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test007/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test007.git
+   cde14d5..c82b8d4  develop -> develop
++ echo test006_fork
+test006_fork
++ cd /var/lib/jenkins/workspace/allbranchautomation/test006_fork
++ git checkout -b covid
+Switched to a new branch 'covid'
++ touch indiaoodles
++ git add .
++ git commit -m adding new file
+[covid 8756995] adding new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006_fork.git covid
+remote: 
+remote: Create pull request for covid:        
+remote:   https://bitbucket.org/pietto/test006_fork/pull-requests/new?source=covid&t=1        
+remote: 
+To https://bitbucket.org/pietto/test006_fork.git
+ * [new branch]      covid -> covid
++ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
++ git pull origin master
+From https://bitbucket.org/pietto/test006_fork
+ * branch            master     -> FETCH_HEAD
+Already up to date.
++ git merge covid
+Updating 9c2d52b..8756995
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006_fork.git master
+To https://bitbucket.org/pietto/test006_fork.git
+   9c2d52b..8756995  master -> master
++ git tag 29
++ git tag -n
+29              adding new file
+v3.2.1          Release v3.2.1
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006_fork.git 29
+To https://bitbucket.org/pietto/test006_fork.git
+ * [new tag]         29 -> 29
++ git checkout develop
+Switched to a new branch 'develop'
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
++ git pull origin develop
+From https://bitbucket.org/pietto/test006_fork
+ * branch            develop    -> FETCH_HEAD
+Already up to date.
++ git merge master
+Updating 9c2d52b..8756995
+Fast-forward
+ indiaoodles | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 indiaoodles
++ git push https://pietto:Smooch!991@bitbucket.org/pietto/test006_fork.git develop
+remote: 
+remote: Create pull request for develop:        
+remote:   https://bitbucket.org/pietto/test006_fork/pull-requests/new?source=develop&t=1        
+remote: 
+To https://bitbucket.org/pietto/test006_fork.git
+   9c2d52b..8756995  develop -> develop
+[8mha:////4GqU3AfVQNfVmFAH3cRVLGSKHTwZuIURn2Lx1i8QazRfAAAApR+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIioEIoFa3lhheYxBgn1l2wHZyKF/E1/oBFJCq2WO1sM683LIOHmr3BTlNvKTQWBzeavDCx76+OE3Z8wYYpsNModZLc6tOMkqOGOUUJCwErTY3jYMlEWItOPVTlFJnqHH3+jgJK297hCYXI5qh8/MLkYXMb28D08/wVwDQMEcrdPtf28AEud0rYvgAAAA==[0m[Pipeline] }
+[8mha:////4BWbuaCBJ4aQ3k5K+5Dlcs8labvolgGAggFOqYJmt8UZAAAAph+LCAAAAAAAAP9tjTEOwjAQBC9BFLSUPOIiEAUSSkVrueEFJjHGiXUXbAen4kV8jT9gEYmKLVY728zrDcvgoWZvsNPUWwqNxcGNJi9M7Pur44QdX7BhCuw0Sp0kt/o0o+SoYU5RwkLASlPjOFgyEdaiUw9VOUWmOkefv6OA0rZ3eEIhsjkqH78wedjcxjYw/Tx/BTANQ4Ryt8+1PXwAAHdIsr4AAAA=[0m[Pipeline] // stage
+[8mha:////4B2XGM8s1cYI4Ut9ZkKl212OWlQxLEqbVMCjLA4KIgxPAAAAox+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKREFSIitZKwwtMYowT6y7YF5KKF/E1/kBEJCq22plmXm8sU8SRo1ONpdZTqrzqQu+mpwaO7TXwoBq+qIopcbCqtEPJtT3NWLJYzMtyLDRWlqrAyZMTrHVjHqYIhlxxlji5g0bu6zueyPRUFhPlC2PE5tbXienX+RvA2HWCfLsXZLsPW9YxnL0AAAA=[0m[Pipeline] }
+[8mha:////4JeET/S3ZSpDW1DeGy7ewj373OsK74dBOvXBPgVp7BhdAAAApB+LCAAAAAAAAP9tjTEOwjAQBDdBFLSUPMKRQKJBVLRWGl5gEmOcWHfBvpBUvIiv8QciIlGx1c4083pjmSKOHJ1qLLWeUuVVF3o3PTVwbK+BB9XwRVVMiYNVpR1Kru1pxpLFYl6WY6GxslQFTp6cYK0b8zBFMOSKs8TJHTRyX9/xRKanspgoXxgjNre+Tky/zt8Axq4T5Nu9INt9ACg59UW9AAAA[0m[Pipeline] // node
+[8mha:////4AyuW3HzyOc55RLQlzKXYPcX0EBXoonOhJ5ii2JJAODNAAAAox+LCAAAAAAAAP9tjbEOgjAURS8YB1dHP6IkLA7GybVh8Qsq1Fpo3sP2IUx+kb/mP0gkcfJO95zlvN5Yp4gjR6daS52nVHvVh8HNT40cu2vgUbV8UTVT4mBVZceKG3tasGKxWJblWGlsLNWBkycn2OrWPEwRDLniLHF2B43cN3c8kem5LCbKF6aI3W1oEtOv8zeAqe8FebkXZOUHDiCSD70AAAA=[0m[Pipeline] End of Pipeline
+Finished: SUCCESS

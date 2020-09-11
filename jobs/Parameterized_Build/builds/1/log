@@ -1,0 +1,21 @@
+Started by user [8mha:////4KuUW7S9534PynVfBTj8ydAQcukQ195/ubXCuSPFkvQUAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0mAdmin
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Parameterized_Build
+using credential 098f54aa-330f-4a1a-b977-61bd12405418
+Cloning the remote Git repository
+Cloning repository https://pietto@bitbucket.org/pietto/test006.git
+ > /usr/bin/git init /var/lib/jenkins/workspace/Parameterized_Build # timeout=10
+Fetching upstream changes from https://pietto@bitbucket.org/pietto/test006.git
+ > /usr/bin/git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://pietto@bitbucket.org/pietto/test006.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://pietto@bitbucket.org/pietto/test006.git # timeout=10
+ > /usr/bin/git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git config remote.origin.url https://pietto@bitbucket.org/pietto/test006.git # timeout=10
+Fetching upstream changes from https://pietto@bitbucket.org/pietto/test006.git
+using GIT_ASKPASS to set credentials 
+ > /usr/bin/git fetch --tags --progress -- https://pietto@bitbucket.org/pietto/test006.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > /usr/bin/git rev-parse origin/$(Branch_Name)^{commit} # timeout=10
+ > /usr/bin/git rev-parse $(Branch_Name)^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE
