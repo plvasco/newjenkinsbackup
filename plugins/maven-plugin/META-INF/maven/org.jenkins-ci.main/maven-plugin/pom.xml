@@ -30,7 +30,7 @@ THE SOFTWARE.
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
     <version>3.43</version>
-    <relativePath />
+    <relativePath/>
   </parent>
 
   <groupId>org.jenkins-ci.main</groupId><!-- for historical reason, this plugin has a different groupId -->
@@ -53,7 +53,7 @@ THE SOFTWARE.
       It declares version of the core, which should be included into the the server-side.
       Note that the plugin still bundles agent support for Maven 3.0.5, probably it's not really operational
     -->
-    <mavenMinimalVersion>3.5.4</mavenMinimalVersion>
+    <mavenMinimalVersion>3.6.0</mavenMinimalVersion>
     <maven.version>${mavenVersion}</maven.version>
     <resolverVersion>1.1.1</resolverVersion>
     <sisuInjectVersion>0.3.3</sisuInjectVersion>
@@ -61,7 +61,7 @@ THE SOFTWARE.
     <!--TODO: change to true after the code cleanup-->
     <spotbugs.failOnError>false</spotbugs.failOnError>
     <!-- well the parent pom could defined an empty one instead of causing failure!! -->
-    <argLine />
+    <argLine/>
   </properties>
 
   <issueManagement>
@@ -687,7 +687,7 @@ THE SOFTWARE.
     <dependency>
       <groupId>org.apache.commons</groupId>
       <artifactId>commons-lang3</artifactId>
-      <version>3.7</version>
+      <version>3.18.0</version>
     </dependency>
 
     <dependency>
